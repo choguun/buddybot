@@ -1,4 +1,4 @@
-# Omi Assistant
+# BuddyBot
 
 A Flask-based voice assistant that uses OpenAI's GPT-4 to respond to voice commands.
 
