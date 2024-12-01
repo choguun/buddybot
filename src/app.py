@@ -78,5 +78,12 @@ def status():
         "uptime": time.time() - start_time
     })
 
+@app.route('/instructions', methods=['GET'])
+def setup_status():
+    return jsonify({
+        "status": "OK",
+        "message": "Enable and enjoy! Just ask your questions and I'll do my best to answer them."
+})
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=PORT, debug=DEBUG)
